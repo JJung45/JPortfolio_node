@@ -1,3 +1,0 @@
-#Travel Diary
-
-use nodejs
