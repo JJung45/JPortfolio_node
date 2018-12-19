@@ -215,7 +215,7 @@ router.post(`/delete_process`,function(req, res){
     db.query(`select * from postings where id=?`,[id],function(error, result,fields){
         if(error){throw error;}
         var nationId = result[0].nationId;
-        db.query(`delete from posting where id=?`,[id], function (error2, result2, fields) {
+        db.query(`delete from postings where id=?`,[id], function (error2, result2, fields) {
             if(error2){throw error2;}
             res.redirect(`/contents/show/${nationId}`);
         })
