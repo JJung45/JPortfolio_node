@@ -2,4 +2,4 @@
 
 1. myapp: 여행일기 작성사이트
 (현재 heroku에 업데이트 중)<br>
-https://youtu.be/FCAjDEHSOW8
+https://youtu.be/FCAjDEHSOW8 (구동영상)
