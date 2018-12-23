@@ -5,11 +5,6 @@ var shorid = require('shortid');
 
 module.exports = function (app){
 
-    var authData = {
-        userId: 'wjdgkrud',
-        userPw: '1111'
-    }
-
     var passport = require('passport')
     , LocalStrategy = require('passport-local').Strategy
     , GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
@@ -73,9 +68,6 @@ module.exports = function (app){
                 });
             }
         })
-        //    User.findOrCreate({ googleId: profile.id }, function (err, user) {
-        //      return done(err, user);
-        //    });
       }
     ));
 

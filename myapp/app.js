@@ -27,12 +27,10 @@ app.use(session({
 var passport = require('./lib/passport')(app);
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 var contentsRouter = require('./routes/contents');
 var authRouter = require('./routes/auth')(passport);
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 app.use('/contents',contentsRouter);
 app.use('/auth',authRouter);
 

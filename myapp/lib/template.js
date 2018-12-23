@@ -80,9 +80,4 @@ module.exports = {
 
         return body;
     }
-    // ,FELEID: function(){
-    //     return `<div class="contents">
-    //         <p>content</p>
-    //     </div>`;
-    // }
 }
