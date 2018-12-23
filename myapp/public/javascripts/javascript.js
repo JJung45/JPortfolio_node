@@ -1,13 +1,3 @@
-// $(window).on('load resize', function() {
-
-//     var $indeximage_width = $("#indeximage").width();
-//     var $indeximage_ratio = 0.57;
-//     console.log($indeximage_width);
-//     $("#indeximage").css({
-//         height: $indeximage_ratio * $indeximage_width
-//     });
-
-// })
 $(window).on('load', function() {
 
         var currentWidth = $(window).outerWidth();
@@ -59,7 +49,7 @@ $(window).on('load', function() {
         }
     });
 
-    //sublist
+    //gnb
     $(".menu>li").hover(
     function(){
         $(this).find('ul').show();
@@ -73,13 +63,6 @@ $(window).on('load', function() {
         },function(){
             $("#goNation").hide();
         })
-
-    // $(document).mouseup(
-    //     function(e){
-    //         if(!$('.sublist').is(e.target) && $('.sublist').has(e.target).length===0){
-    //             $('.sublist').hide();
-    //         }
-    // })
 
     //file미리보기
     function readURL(input){

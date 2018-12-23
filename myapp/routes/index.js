@@ -5,8 +5,6 @@ var auth = require('../lib/auth');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  console.log(req.session);
-  //if(아이디세션이 있으면) /contents/show로 이동
   if(auth.isOwner(req,res)){
     res.redirect('./contents/show');
   }

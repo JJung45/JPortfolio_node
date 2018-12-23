@@ -56,7 +56,6 @@ router.post(`/register_process`,function(req, res){
                     userEmail: userEmail,
                     userName: userName
                 }
-                console.log(user.userPw);
                 db.query(`select * from user where userId=?`,[userId],function(error2, result, fields){
                     if(result[0]!==undefined){
                         alert('중복된 아이디값입니다.');
